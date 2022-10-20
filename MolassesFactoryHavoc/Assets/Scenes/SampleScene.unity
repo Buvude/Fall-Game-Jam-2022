@@ -777,7 +777,7 @@ GameObject:
   - component: {fileID: 259319229}
   m_Layer: 0
   m_Name: 'BossSlime '
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -857,7 +857,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259319228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.62, y: 1.72, z: 0}
+  m_LocalPosition: {x: -2.88, y: 1.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1359,10 +1359,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HorizontalVelocityAccelerate: 0.2
   HorizontalVelocityDecccelerate: 0.5
-  MaxHorizontalVelocity: 2
-  JumpVelocity: 3.5
+  MaxHorizontalVelocity: 3.5
+  JumpVelocity: 5
   playerSpriteTransform: {fileID: 2001034449}
-  playerSprite: {fileID: 21300000, guid: 58b075373ef7c264db3680683ea0552e, type: 3}
+  playerSprite: {fileID: 1772274215, guid: 6041a55d15bf59b46942cffe803ac4ee, type: 3}
 --- !u!4 &516567562
 Transform:
   m_ObjectHideFlags: 0
@@ -1688,6 +1688,7 @@ GameObject:
   - component: {fileID: 727088747}
   - component: {fileID: 727088746}
   - component: {fileID: 727088745}
+  - component: {fileID: 727088748}
   m_Layer: 3
   m_Name: Camera
   m_TagString: MainCamera
@@ -1754,13 +1755,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727088744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.27, z: -11.93}
+  m_LocalPosition: {x: 0, y: 0.275, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &727088748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727088744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c0a86fe459e8d8428b83f25a029fa8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetEntity: {fileID: 1474608637}
+  targetOffset: {x: 0, y: 0, z: -10}
+  slerpValue: 3
 --- !u!1 &757281387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,7 +2319,7 @@ GameObject:
   - component: {fileID: 1287402994}
   m_Layer: 0
   m_Name: MolassesSlime
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2606,10 +2622,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HorizontalVelocityAccelerate: 0.2
   HorizontalVelocityDecccelerate: 0.5
-  MaxHorizontalVelocity: 2
-  JumpVelocity: 3.5
+  MaxHorizontalVelocity: 3.5
+  JumpVelocity: 5
   playerSpriteTransform: {fileID: 163448444}
-  playerSprite: {fileID: 21300000, guid: 58b075373ef7c264db3680683ea0552e, type: 3}
+  playerSprite: {fileID: -1537837349, guid: 9f04d7c658545a4419581b4d7112de09, type: 3}
 --- !u!114 &1474608640
 MonoBehaviour:
   m_ObjectHideFlags: 0

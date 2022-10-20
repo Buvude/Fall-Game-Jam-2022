@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
 	public float HorizontalVelocityAccelerate = 0.2f;
 	public float HorizontalVelocityDecccelerate = 0.5f;
-	public float MaxHorizontalVelocity = 2f;
-	public float JumpVelocity = 3.5f;
+	public float MaxHorizontalVelocity = 3.5f;
+	public float JumpVelocity = 5f;
 	float MoveVelocityAccel = 0f;
 	bool isJumping = false;
 
@@ -46,11 +46,23 @@ public class PlayerController : MonoBehaviour
 	        GetComponent<Rigidbody2D>().velocity = new Vector2((MoveVelocityAccel/GetComponent<Rigidbody2D>().mass),GetComponent<Rigidbody2D>().velocity.y);
 	}
 
+	void OnCollisionEnter2D(Collider2D collision)
+	{
+		if (collision.gameObject.tag == "Enemy")
+		{
+			PlayerDefeated();
+		}
+	}
+
 	void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.gameObject.tag == "Walkable")
 		{
 			isJumping = false;
+		}
+		if (collision.gameObject.tag == "Enemy")
+		{
+			PlayerDefeated();
 		}
 	}
 
@@ -68,5 +80,11 @@ public class PlayerController : MonoBehaviour
 		{
 			isJumping = true;
 		}
+	}
+
+	public void PlayerDefeated()
+	{
+		// ADD CODE HERE
+		Debug.Log("Player is defeated.");
 	}
 }
