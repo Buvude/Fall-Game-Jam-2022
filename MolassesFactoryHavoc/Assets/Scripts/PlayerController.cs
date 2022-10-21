@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
 	public float JumpVelocity = 5f;
 	float MoveVelocityAccel = 0f;
 	bool isJumping = false;
+	public PCSpriteController PCControl;
 
 	public Transform playerSpriteTransform;
 	public Sprite playerSprite;
@@ -24,11 +26,13 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetAxis("Horizontal") < 0)
 		{
 			dirMult = -1;
+			
 		}
-        	if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.01f)
-		{
+        if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.01f)
+			{
 			MoveVelocityAccel += (dirMult * 2.5f) * Time.deltaTime;
 			playerSpriteTransform.localScale = new Vector3(dirMult,1f,1f);
+			 
         	}
 		else
 		{
@@ -44,6 +48,19 @@ public class PlayerController : MonoBehaviour
 			MoveVelocityAccel = MaxHorizontalVelocity * clampMult;
 		}
 	        GetComponent<Rigidbody2D>().velocity = new Vector2((MoveVelocityAccel/GetComponent<Rigidbody2D>().mass),GetComponent<Rigidbody2D>().velocity.y);
+
+        if (Input.GetKey(KeyCode.D))
+        {
+			PCControl.WalkCycleStart();
+        }
+        else
+        {
+			PCControl.WalkCycleEnd();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+			SceneManager.LoadScene(0);
+        }
 	}
 
 	void OnCollisionEnter2D(Collider2D collision)
