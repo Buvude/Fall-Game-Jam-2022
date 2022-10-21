@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 28213e94352b5a540a0e7e58b5b1a8ce
+guid: 28f59d7c15c1ac94fa8543184764ec94
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 0
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FactoryTileset_0
+      name: FinishValve_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 117
-        width: 359
-        height: 363
+        x: 60
+        y: 90
+        width: 240
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81281625fd4f8c24bb02321155a46a50
-      internalID: -547775019
+      spriteID: 57118956f9c011543876a557b08fef0e
+      internalID: 1282002714
       vertices: []
       indices: 
       edges: []
@@ -152,7 +152,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 09d18592c657088498afa50ca5238057
+    spriteID: 960b6e27221a3994a8e47a6486ec40f8
     internalID: 0
     vertices: []
     indices: 
@@ -160,10 +160,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FactoryTileset_3: 1500015205
-      FactoryTileset_0: -547775019
-      FactoryTileset_1: -1918510749
-      FactoryTileset_2: -622234575
+      FinishValve_0: 1282002714
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
