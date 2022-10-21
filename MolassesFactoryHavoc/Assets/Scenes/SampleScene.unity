@@ -783,6 +783,7 @@ MonoBehaviour:
   HorizontalVelocityDecccelerate: 0.5
   MaxHorizontalVelocity: 3.5
   JumpVelocity: 5
+  PCControl: {fileID: 0}
   playerSpriteTransform: {fileID: 2001034449}
   playerSprite: {fileID: 1772274215, guid: 6041a55d15bf59b46942cffe803ac4ee, type: 3}
 --- !u!4 &516567562
@@ -2451,6 +2452,7 @@ MonoBehaviour:
   HorizontalVelocityDecccelerate: 0.5
   MaxHorizontalVelocity: 3.5
   JumpVelocity: 10
+  PCControl: {fileID: 1474608640}
   playerSpriteTransform: {fileID: 163448444}
   playerSprite: {fileID: -1537837349, guid: 9f04d7c658545a4419581b4d7112de09, type: 3}
 --- !u!114 &1474608640
