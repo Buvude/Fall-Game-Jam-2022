@@ -1433,8 +1433,8 @@ GameObject:
   m_Component:
   - component: {fileID: 727088747}
   - component: {fileID: 727088746}
-  - component: {fileID: 727088745}
   - component: {fileID: 727088748}
+  - component: {fileID: 727088749}
   m_Layer: 3
   m_Name: Camera
   m_TagString: MainCamera
@@ -1442,14 +1442,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &727088745
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 727088744}
-  m_Enabled: 1
 --- !u!20 &727088746
 Camera:
   m_ObjectHideFlags: 0
@@ -1523,6 +1515,14 @@ MonoBehaviour:
   targetEntity: {fileID: 1474608637}
   targetOffset: {x: 0, y: 0, z: -10}
   slerpValue: 3
+--- !u!81 &727088749
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727088744}
+  m_Enabled: 1
 --- !u!4 &749060505 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8074359697020197386, guid: ea2ca39e54df8de4fa56b88cdf663f8b,
@@ -1707,7 +1707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1715,14 +1715,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -1781,6 +1773,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &963194229
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
 --- !u!1001 &982065033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1967,6 +1967,16 @@ PrefabInstance:
     - target: {fileID: 783402720118866867, guid: 014381521c5fc7b49b1c5e4e0b2c905d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607850551712751716, guid: 014381521c5fc7b49b1c5e4e0b2c905d,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607850551712751716, guid: 014381521c5fc7b49b1c5e4e0b2c905d,
+        type: 3}
+      propertyPath: MinDistance
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

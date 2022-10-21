@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 783402720118866866}
   - component: {fileID: 783402720118866861}
   - component: {fileID: 783402720118866864}
-  - component: {fileID: 4607850551712751716}
+  - component: {fileID: 1987382009524864151}
   m_Layer: 0
   m_Name: MolassesSlime
   m_TagString: Enemy
@@ -103,7 +103,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!82 &4607850551712751716
+--- !u!82 &1987382009524864151
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,16 +115,16 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: be5c35ae92bb320468ab9db3449889f8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.118
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 1.01
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
